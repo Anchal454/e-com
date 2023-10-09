@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+section .container {
+  margin: 5rem 0;
+}
+
+.container {
+  padding: 0 5rem !important;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.productSize {
+  height: 36px;
+  width: 36px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productSize span {
+  /* font: Montserrat; */
+  font-weight: 500;
+  size: 14px;
+  line-height: 17.07px;
+
+}
+
+.heading {
+  font-family: Playfair Display;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.MuiDivider-root::after,
+.MuiDivider-root::before {
+  border-top: 2px solid #FFC7D1 !important;
+  border-top-width: solid;
+}
+
+.content-box {
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+  z-index: 4;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+.bg-text {
+  color: #000;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.cardHoverText {
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.Ellipse {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+}
+
+.Ellipse1 {
+  right: 0px;
+  top: -6rem
+}
+
+.Ellipse2 {
+  left: 0px;
+  bottom: -6rem
+}
+
+.support img {
+  width: 100px;
+  height: 110px;
+}
+
+.support p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.subscribe {
+  background: linear-gradient(97.3deg, #AB001E -6.23%, #770015 105.09%);
+
+}
+
+.subscribe h2 {
+  font-family: Playfair Display;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0px;
+}
+
+footer ul li {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footerTitle {
+  font-family: Playfair Display;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.productCards :hover img.cardMedia {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+.productCards img.cardMedia {
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 560px) {
+  .heading {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+
+.productCards {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  transition: all .5ms;
+}
+
+.productCards .fadedbox {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  color: #fff;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.productCards:hover .fadedbox {
+  opacity: 0.8;
+}
+
+.productCards .text {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+}
+
+.productCards .title {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.3s;
+}
+
+.productCards:hover .title,
+.productCards:focus .title {
+  opacity: 1;
+  transform: translateY(100%);
+  -webkit-transform: translateY(0);
+}
+
+.hoverImageCard {
+  height: 30px;
+  width: 30px;
+}
